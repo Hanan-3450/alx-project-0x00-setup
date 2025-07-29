@@ -18,7 +18,7 @@ It sets up a modern web application using:
 
 ## Setup Commands
 
-```bash
+````bash
 npx create-next-app@latest alx-project-0x00 --typescript
 # Options selected:
 # ✔ ESLint
@@ -28,3 +28,17 @@ npx create-next-app@latest alx-project-0x00 --typescript
 # ✘ No for /src directory
 
 npm run dev -- -p 3000
+
+
+# Airbnb Application Clone
+
+A simple Airbnb-style application built with **Next.js**, **TypeScript**, and **Tailwind CSS** as part of the ALX Frontend project.
+
+## Setup
+
+```bash
+npm install
+npm run dev -- -p 3000
+
+
+````
