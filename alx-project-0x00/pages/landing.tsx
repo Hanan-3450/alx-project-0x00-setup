@@ -34,6 +34,8 @@ const Landing = () => {
         <Button title="Small Button" styles="text-sm rounded-sm" />
         <Button title="Medium Button" styles="text-base rounded-md" />
         <Button title="Large Button" styles="text-lg rounded-full" />
+        <Button title="Extra Button" styles="text-base rounded-lg" />{" "}
+        {/* ✅ Added */}
       </div>
     </div>
   );
