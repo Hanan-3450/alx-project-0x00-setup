@@ -1,18 +1,40 @@
-// pages/landing.tsx
 import React from "react";
 import Card from "@/components/Card";
+import Button from "@/components/Button"; // ✅ Add this import
 
-const LandingPage: React.FC = () => {
+const Landing = () => {
   return (
-    <main className="p-8">
-      <h1 className="text-4xl font-bold mb-6">Landing Page</h1>
+    <div className="p-4">
+      <h1 className="text-3xl font-bold mb-4">Landing Page</h1>
 
-      {/* Render Card component 3 times */}
-      <Card />
-      <Card />
-      <Card />
-    </main>
+      <div className="flex gap-4 flex-wrap">
+        <Card
+          title="Villa Arrecife Beach House"
+          location="Sideman, Bali, Indonesia"
+          price="$2,450"
+          rating={4.76}
+          imageUrl="/assets/house.png"
+          tags={["Top Villa", "Self CheckIn", "Free Reschedule"]}
+        />
+
+        <Card
+          title="Oceanview Penthouse"
+          location="Santa Monica, California"
+          price="$1,980"
+          rating={4.89}
+          imageUrl="/assets/house.png"
+          tags={["Luxury Stay", "Fast Wi-Fi", "Free Cancellation"]}
+        />
+      </div>
+
+      {/* ✅ Add Buttons below the cards */}
+      <div className="space-y-4 mt-6">
+        <Button title="Small Button" styles="text-sm rounded-sm" />
+        <Button title="Medium Button" styles="text-base rounded-md" />
+        <Button title="Large Button" styles="text-lg rounded-full" />
+      </div>
+    </div>
   );
 };
 
-export default LandingPage;
+export default Landing;
