@@ -1,12 +1,14 @@
+// pages/landing.tsx
 import React from "react";
 import Card from "@/components/Card";
-import Button from "@/components/Button"; // ✅ Add this import
+import Button from "@/components/Button"; // ✅ Import Button
 
 const Landing = () => {
   return (
     <div className="p-4">
       <h1 className="text-3xl font-bold mb-4">Landing Page</h1>
 
+      {/* Cards Section */}
       <div className="flex gap-4 flex-wrap">
         <Card
           title="Villa Arrecife Beach House"
@@ -27,7 +29,7 @@ const Landing = () => {
         />
       </div>
 
-      {/* ✅ Add Buttons below the cards */}
+      {/* ✅ Buttons Section */}
       <div className="space-y-4 mt-6">
         <Button title="Small Button" styles="text-sm rounded-sm" />
         <Button title="Medium Button" styles="text-base rounded-md" />
